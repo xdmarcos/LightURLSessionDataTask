@@ -1,7 +1,7 @@
-@testable import LightURLSessionTask
+@testable import LightURLSessionDataTask
 import XCTest
 
-final class LightURLSessionTaskTests: XCTestCase {
+final class LightURLSessionDataTaskTests: XCTestCase {
   func testExample() {
   }
 

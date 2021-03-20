@@ -3,22 +3,22 @@
 import PackageDescription
 
 let package = Package(
-  name: "LightURLSessionTask",
+  name: "LightURLSessionDataTask",
   products: [
     .library(
-      name: "LightURLSessionTask",
-      targets: ["LightURLSessionTask"]
+      name: "LightURLSessionDataTask",
+      targets: ["LightURLSessionDataTask"]
     ),
   ],
   dependencies: [],
   targets: [
     .target(
-      name: "LightURLSessionTask",
+      name: "LightURLSessionDataTask",
       dependencies: []
     ),
     .testTarget(
-      name: "LightURLSessionTaskTests",
-      dependencies: ["LightURLSessionTask"]
+      name: "LightURLSessionDataTaskTests",
+      dependencies: ["LightURLSessionDataTask"]
     ),
   ]
 )

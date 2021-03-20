@@ -1,4 +1,4 @@
-# LightURLSessionTask
+# LightURLSessionDataTask
 
 A light URLSession Data task implementation
 
