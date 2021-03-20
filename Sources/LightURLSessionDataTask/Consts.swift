@@ -8,5 +8,5 @@
 import Foundation
 
 public enum Consts {
-  public static let successStatusCodes: Range<Int> = 200 ..< 300
+  public static let successStatusCodeRange: Range<Int> = 200 ..< 300
 }

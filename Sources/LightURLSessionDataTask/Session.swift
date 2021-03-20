@@ -45,7 +45,7 @@ open class Session: SessionProtocol {
         if let error = error {
           throw Error.requestFailed(error: error)
         }
-        try self.validate(response: response, against: responseOptions)
+        try self.validate(response: response, with: responseOptions)
         return try self.decode(data: data, type: dataType, options: responseOptions)
       })
     }
@@ -55,7 +55,7 @@ open class Session: SessionProtocol {
     request.addMIMEType(string: options.mimeType)
   }
 
-  open func validate(response: URLResponse?, against options: ResponseOptionsProtocol) throws {
+  open func validate(response: URLResponse?, with options: ResponseOptionsProtocol) throws {
     try validate(response: response, statusCodes: options.statusCodes)
     try validate(response: response, mimeTypes: options.mimeTypes)
   }

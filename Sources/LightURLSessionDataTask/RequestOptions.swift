@@ -12,7 +12,7 @@ public protocol RequestOptionsProtocol {
 public struct RequestOptions: RequestOptionsProtocol {
   public let mimeType: String?
 
-  public init(mimeType: String? = "application/json") {
+  public init(mimeType: String? = MimeType.json.rawValue) {
     self.mimeType = mimeType
   }
 }
