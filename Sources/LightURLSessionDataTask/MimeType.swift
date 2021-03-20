@@ -17,4 +17,5 @@ public enum MimeType: String {
   case jpeg = "image/jpeg"
   case svg = "image/svg"
   case multipart = "multipart/form-data"
+  case urlEncoded = "application/x-www-form-urlencoded"
 }
