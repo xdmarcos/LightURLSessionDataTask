@@ -89,7 +89,7 @@ open class Session: SessionProtocol {
     type: T.Type,
     options: ResponseOptionsProtocol
   ) throws -> T {
-    guard let data = data, data.count > 0 else {
+    guard let data = data, !data.isEmpty else {
       throw Error.contentDataUnavailable
     }
     do {
