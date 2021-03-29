@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
   name: "LightURLSessionDataTask",
+  platforms: [
+    .macOS(.v10_13), .iOS(.v11), .tvOS(.v11),
+  ],
   products: [
     .library(
       name: "LightURLSessionDataTask",

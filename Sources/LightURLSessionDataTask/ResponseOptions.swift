@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol DataDecoderProtocol {
-  func decode<T: Decodable>(_ type: T.Type, from: Data) throws -> T 
+  func decode<T: Decodable>(_ type: T.Type, from: Data) throws -> T
 }
 
 public protocol ResponseOptionsProtocol {
