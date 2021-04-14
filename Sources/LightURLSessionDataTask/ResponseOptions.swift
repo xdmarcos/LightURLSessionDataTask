@@ -24,7 +24,7 @@ public struct ResponseOptions: ResponseOptionsProtocol {
 
   public init(
     decoder: DataDecoderProtocol = JSONDecoder(),
-    statusCodes: Range<Int>? = Consts.successStatusCodeRange,
+    statusCodes: Range<Int>? = Environment.successStatusCodeRange,
     mimeTypes: [String]? = [MimeType.json.rawValue]
   ) {
     self.decoder = decoder
